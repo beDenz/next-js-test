@@ -9,7 +9,7 @@ export const Home = ({ menuItem }): JSX.Element => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/main')
+  const res = await fetch(process.env.MAIN_PAGE)
 
   const result = await res.json()
 
