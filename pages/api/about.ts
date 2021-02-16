@@ -32,11 +32,25 @@ const aboutPageMeta = {
   keywords:'bla-bla-bla'
 }
 
+const title = "About page"
 
+const text = `
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
+unde, corporis eligendi inventore blanditiis autem natus minima quasi
+sunt, esse eaque! Soluta, cum tempora. Maiores numquam magnam eos culpa.
+unde, corporis eligendi inventore blanditiis autem natus minima quasi
+sunt, esse eaque! Soluta, cum tempora. Maiores numquam magnam eos culpa.
+unde, corporis eligendi inventore blanditiis autem natus minima quasi
+sunt, esse eaque! Soluta, cum tempora. Maiores numquam magnam eos culpa.
+unde, corporis eligendi inventore blanditiis autem natus minima quasi
+sunt, esse eaque! Soluta, cum tempora. Maiores numquam magnam eos culpa.`
 
+const ver = 1
+
+//////
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  res.status(200).json({ menuItem, aboutPageMeta })
+  res.status(200).json({ menuItem, aboutPageMeta, title, text, ver  })
 }
 
 export default handler
