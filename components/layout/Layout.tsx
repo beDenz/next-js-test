@@ -9,14 +9,18 @@ import { MenuItem } from 'types/types'
 function Layout({
   children,
   menuItem,
+  meta,
 }: {
   children: ReactNode
   menuItem: MenuItem[]
+  meta: any
 }): JSX.Element {
   return (
     <Container>
       <Head>
-        <title>Create Next App</title>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta name="keywords" content={meta.keywords} />
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <link
           rel="stylesheet"

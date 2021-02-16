@@ -1,8 +1,8 @@
 import { Layout } from '../components/layout/Layout'
 
-export const Home = ({ menuItem }): JSX.Element => {
+export const Home = ({ menuItem, mainPageMeta }): JSX.Element => {
   return (
-    <Layout menuItem={menuItem}>
+    <Layout menuItem={menuItem} meta={mainPageMeta}>
       <div>Main Page</div>
     </Layout>
   )
@@ -13,11 +13,12 @@ export async function getStaticProps() {
 
   const result = await res.json()
 
-  const { menuItem } = result
+  const { menuItem, mainPageMeta } = result
 
   return {
     props: {
       menuItem,
+      mainPageMeta,
     },
   }
 }

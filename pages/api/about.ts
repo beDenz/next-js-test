@@ -26,16 +26,17 @@ const menuItem = [
 ];
 
 
-
-const mainPageMeta = {
-  title: 'Main Page',
-  description: 'main next js page info',
+const aboutPageMeta = {
+  title: 'About Page',
+  description: 'about next js page info',
   keywords:'bla-bla-bla'
 }
 
 
+
+
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  res.status(200).json({ menuItem, mainPageMeta })
+  res.status(200).json({ menuItem, aboutPageMeta })
 }
 
 export default handler

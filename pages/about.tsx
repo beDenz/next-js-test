@@ -1,8 +1,8 @@
 import { Layout } from 'components/layout/Layout'
 
-function About({ menuItem }): JSX.Element {
+function About({ menuItem, aboutPageMeta }): JSX.Element {
   return (
-    <Layout menuItem={menuItem}>
+    <Layout menuItem={menuItem} meta={aboutPageMeta}>
       <div>About page</div>
     </Layout>
   )
@@ -13,11 +13,12 @@ export async function getStaticProps() {
 
   const result = await res.json()
 
-  const { menuItem } = result
+  const { menuItem, aboutPageMeta } = result
 
   return {
     props: {
       menuItem,
+      aboutPageMeta,
     },
   }
 }
