@@ -31,7 +31,7 @@ export async function getStaticProps() {
       text,
       ver,
     },
-    revalidate: 60,
+    //  revalidate: 60,
   }
 }
 
