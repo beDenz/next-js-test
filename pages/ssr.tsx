@@ -2,13 +2,13 @@ import { Layout } from '../components/layout/Layout'
 
 export const Ssr = ({
   menuItem,
-  mainPageMeta,
+  ssrPageMeta,
   title,
   text,
   ver,
 }): JSX.Element => {
   return (
-    <Layout menuItem={menuItem} meta={mainPageMeta}>
+    <Layout menuItem={menuItem} meta={ssrPageMeta}>
       <h1>{title}</h1>
       <p>{text}</p>
       <p>ver {ver}</p>
