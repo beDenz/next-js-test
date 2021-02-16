@@ -20,6 +20,11 @@ const menuItem = [
   },
   {
     id: 4,
+    link: '/ssr',
+    title: 'ssr',
+  },
+  {
+    id: 5,
     link: '/',
     title: 'login',
   },
