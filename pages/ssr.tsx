@@ -27,12 +27,12 @@ export async function getServerSideProps() {
     }
   }
 
-  const { menuItem, mainPageMeta, title, text, ver } = result
+  const { menuItem, ssrPageMeta, title, text, ver } = result
 
   return {
     props: {
       menuItem,
-      mainPageMeta,
+      ssrPageMeta,
       title,
       text,
       ver,
