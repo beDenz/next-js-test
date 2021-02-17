@@ -29,7 +29,7 @@ function Layout({
       </Head>
       <header className="header">
         <Logo />
-        <NavMenu list={menuItem} />
+        {/* <NavMenu list={menuItem} /> */}
       </header>
       <main>{children}</main>
       <footer></footer>
