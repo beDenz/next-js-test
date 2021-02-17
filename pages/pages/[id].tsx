@@ -22,9 +22,14 @@ export async function getStaticPaths() {
   }
 }
 export async function getStaticProps({ params }) {
-  console.log('!!!!ENV', process.env.NODE_ENV)
+  const url =
+    process.env.NODE_ENV === 'production'
+      ? `${process.env.PAGE_ID}${params.id}.json`
+      : `${process.env.PAGE_ID}${params.id}`
 
-  const res = await fetch(`${process.env.PAGE_ID}${params.id}`)
+  console.log('!!!URL', url)
+
+  const res = await fetch(url)
   const result = await res.json()
 
   const { menu, meta, title, ver } = result
