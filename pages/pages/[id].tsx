@@ -8,8 +8,8 @@ type PageProps = {
   ver: string
 }
 
-const Page = ({ menu, meta, title, ver }: PageProps) => {
-  console.log('menu', menu, 'meta', meta, 'title', title, 'ver', ver)
+const Page = ({ menu, meta, title, ver, id }: PageProps) => {
+  console.log('menu', menu, 'meta', meta, 'title', title, 'ver', ver, 'id', id)
 
   return (
     <Layout menuItem={menu} meta={meta}>
