@@ -12,11 +12,10 @@ const Page = ({ menu, meta, title, ver }: PageProps) => {
   console.log('menu', menu, 'meta', meta, 'title', title, 'ver', ver)
 
   return (
-    <div></div>
-    // <Layout menuItem={menu} meta={meta}>
-    //   <h1>{title}</h1>
-    //   <p>ver {ver}</p>
-    // </Layout>
+    <Layout menuItem={menu} meta={meta}>
+      <h1>{title}</h1>
+      <p>ver {ver}</p>
+    </Layout>
   )
 }
 
@@ -42,10 +41,6 @@ export async function getStaticProps({ params }) {
   const result = await res.json()
 
   const { menu, meta, title, ver } = result
-
-  console.log('!!!result', {
-    props: { menu, meta, title, ver },
-  })
 
   return {
     props: { menu, meta, title, ver },
