@@ -6,6 +6,7 @@ type PageProps = {
   meta: Meta
   title: string
   ver: string
+  id: string | number
 }
 
 const Page = ({ menu, meta, title, ver, id }: PageProps) => {
