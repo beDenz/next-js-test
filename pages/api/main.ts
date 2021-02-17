@@ -28,26 +28,23 @@ const menuItem = [
     link: '/',
     title: 'login',
   },
-];
-
-
+]
 
 const mainPageMeta = {
   title: 'Main Page',
   description: 'main next js page info',
-  keywords:'bla-bla-bla'
+  keywords: 'bla-bla-bla',
 }
 
-const title = "Main Page";
+const title = 'Main Page'
 
-const text =`
+const text = `
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
 unde, corporis eligendi inventore blanditiis autem natus minima quasi
 sunt, esse eaque! Soluta, cum tempora. Maiores numquam magnam eos culpa.
 `
 
 const ver = 1
-
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json({ menuItem, mainPageMeta, title, text, ver })

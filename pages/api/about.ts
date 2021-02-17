@@ -28,16 +28,15 @@ const menuItem = [
     link: '/',
     title: 'login',
   },
-];
-
+]
 
 const aboutPageMeta = {
   title: 'About Page',
   description: 'about next js page info',
-  keywords:'bla-bla-bla'
+  keywords: 'bla-bla-bla',
 }
 
-const title = "About page"
+const title = 'About page'
 
 const text = `
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
@@ -55,7 +54,7 @@ const ver = 1
 //////
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  res.status(200).json({ menuItem, aboutPageMeta, title, text, ver  })
+  res.status(200).json({ menuItem, aboutPageMeta, title, text, ver })
 }
 
 export default handler
