@@ -22,6 +22,8 @@ export async function getStaticPaths() {
   }
 }
 export async function getStaticProps({ params }) {
+  console.log('!!!!ENV', process.env.NODE_ENV)
+
   const res = await fetch(`${process.env.PAGE_ID}${params.id}`)
   const result = await res.json()
 
