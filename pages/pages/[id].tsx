@@ -27,10 +27,10 @@ export async function getStaticProps({ params }) {
       ? `${process.env.PAGE_ID}${params.id}.json`
       : `${process.env.PAGE_ID}${params.id}`
 
-  console.log('!!!URL', url)
-
   const res = await fetch(url)
   const result = await res.json()
+
+  console.log('!!!result', result)
 
   const { menu, meta, title, ver } = result
 
