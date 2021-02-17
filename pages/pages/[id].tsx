@@ -1,6 +1,14 @@
-import { Layout } from '../../components/layout/Layout'
+import { Layout } from 'components/layout/Layout'
+import { MenuItem, Meta } from 'types/types'
 
-const Page = ({ menu, meta, title, ver }) => {
+type PageProps = {
+  menu: MenuItem[]
+  meta: Meta
+  title: string
+  ver: string
+}
+
+const Page = ({ menu, meta, title, ver }: PageProps) => {
   return (
     <Layout menuItem={menu} meta={meta}>
       <h1>{title}</h1>
@@ -26,6 +34,8 @@ export async function getStaticProps({ params }) {
     process.env.NODE_ENV === 'production'
       ? `${process.env.PAGE_ID}${params.id}.json`
       : `${process.env.PAGE_ID}${params.id}`
+
+  console.log('URL', url)
 
   const res = await fetch(url)
   const result = await res.json()
