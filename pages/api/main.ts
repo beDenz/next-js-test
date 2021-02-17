@@ -10,8 +10,8 @@ const menuItem = [
   },
   {
     id: 2,
-    link: '/',
-    title: 'id',
+    link: '/pages',
+    title: 'pages',
   },
   {
     id: 3,
