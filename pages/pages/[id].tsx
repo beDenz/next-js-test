@@ -9,11 +9,13 @@ type PageProps = {
 }
 
 const Page = ({ menu, meta, title, ver }: PageProps) => {
+  console.log('menu', menu, 'meta',  meta, 'title', title, 'ver', ver);
+  
   return (
-    <Layout menuItem={menu} meta={meta}>
-      <h1>{title}</h1>
-      <p>ver {ver}</p>
-    </Layout>
+    // <Layout menuItem={menu} meta={meta}>
+    //   <h1>{title}</h1>
+    //   <p>ver {ver}</p>
+    // </Layout>
   )
 }
 
