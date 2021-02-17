@@ -43,7 +43,7 @@ export async function getStaticProps({ params }) {
   const { menu, meta, title, ver } = result
 
   return {
-    props: { menu, meta, title, ver },
+    props: { menu, meta, title, ver, id: params.id },
   }
 }
 

@@ -18,9 +18,9 @@ function Layout({
   return (
     <Container>
       <Head>
-        {/* <title>{meta.title}</title>
+        <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
-        <meta name="keywords" content={meta.keywords} /> */}
+        <meta name="keywords" content={meta.keywords} />
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <link
           rel="stylesheet"
