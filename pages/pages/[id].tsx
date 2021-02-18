@@ -29,7 +29,7 @@ export async function getStaticPaths() {
   const { pagesPath } = result
 
   return {
-    paths: pagesPath.map((item) => item),
+    paths: pagesPath,
     fallback: true,
   }
 }
@@ -39,13 +39,15 @@ export async function getStaticProps({ params }) {
       ? `${process.env.PAGE_ID}${params.id}.json`
       : `${process.env.PAGE_ID}${params.id}`
 
+  console.log('!!!url', url)
+
   const res = await fetch(url)
   const result = await res.json()
 
   //  const { menu, meta, title, ver } = result
 
   return {
-    props: result,
+    props: { ...result, url },
   }
 }
 

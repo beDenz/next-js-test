@@ -9,4 +9,3 @@ export type Meta = {
   description: string
   keywords: string
 }
-
