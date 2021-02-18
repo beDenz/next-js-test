@@ -1,4 +1,4 @@
-import { Layout } from '../components/layout/Layout'
+import { Layout } from 'components/layout/Layout'
 import { MenuItem, Meta } from 'types/types'
 import Link from 'next/link'
 
