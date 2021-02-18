@@ -9,15 +9,16 @@ type PageProps = {
   id: string | number
 }
 
-const Page = ({ menu, meta, title, ver, id }: PageProps) => {
-  console.log('menu', menu, 'meta', meta, 'title', title, 'ver', ver, 'id', id)
+const Page = (props: PageProps) => {
+  console.log('!!!', props)
 
-  return (
-    <Layout menuItem={menu} meta={meta}>
-      <h1>{title}</h1>
-      <p>ver {ver}</p>
-    </Layout>
-  )
+  return <div>!!</div>
+  // return (
+  //   <Layout menuItem={menu} meta={meta}>
+  //     <h1>{title}</h1>
+  //     <p>ver {ver}</p>
+  //   </Layout>
+  // )
 }
 
 export async function getStaticPaths() {
@@ -41,10 +42,10 @@ export async function getStaticProps({ params }) {
   const res = await fetch(url)
   const result = await res.json()
 
-  const { menu, meta, title, ver } = result
+  //  const { menu, meta, title, ver } = result
 
   return {
-    props: { menu, meta, title, ver, id: params.id },
+    props: result,
   }
 }
 
