@@ -1,14 +1,23 @@
-import { Layout } from '../components/layout/Layout'
+import { Layout } from 'components/layout/Layout'
+import { MenuItem, Meta } from 'types/types'
+
+type PageProps = {
+  menu: MenuItem[]
+  meta: Meta
+  title: string
+  ver: string
+  text: string
+}
 
 export const Ssr = ({
-  menuItem,
-  ssrPageMeta,
+  menu,
+  meta,
   title,
   text,
   ver,
-}): React.ReactNode => {
+}: PageProps): React.ReactNode => {
   return (
-    <Layout menuItem={menuItem} meta={ssrPageMeta}>
+    <Layout menuItem={menu} meta={meta}>
       <h1>{title}</h1>
       <p>{text}</p>
       <p>ver {ver}</p>
@@ -27,12 +36,12 @@ export async function getServerSideProps() {
     }
   }
 
-  const { menuItem, ssrPageMeta, title, text, ver } = result
+  const { menu, meta, title, text, ver } = result
 
   return {
     props: {
-      menuItem,
-      ssrPageMeta,
+      menu,
+      meta,
       title,
       text,
       ver,

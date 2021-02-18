@@ -1,8 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import { NextApiRequest, NextApiResponse } from 'next'
 
-const menuItem = [
+const menu = [
   {
     id: 1,
     link: '/',
@@ -30,7 +28,7 @@ const menuItem = [
   },
 ]
 
-const ssrPageMeta = {
+const meta = {
   title: 'SSR Page',
   description: 'main next js page info',
   keywords: 'bla-bla-bla',
@@ -47,7 +45,7 @@ sunt, esse eaque! Soluta, cum tempora. Maiores numquam magnam eos culpa.
 const ver = 1
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  res.status(200).json({ menuItem, ssrPageMeta, title, text, ver })
+  res.status(200).json({ menu, meta, title, text, ver })
 }
 
 export default handler

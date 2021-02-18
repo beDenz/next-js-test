@@ -2,7 +2,7 @@
 
 import { NextApiRequest, NextApiResponse } from 'next'
 
-const menuItem = [
+const menu = [
   {
     id: 1,
     link: '/',
@@ -58,7 +58,7 @@ const pagesIds = [
   },
 ]
 
-const pagesPageMeta = {
+const meta = {
   title: 'Pages Page',
   description: 'pages next js page info',
   keywords: 'bla bla bla',
@@ -95,7 +95,7 @@ const pagesPath = [
 ]
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  res.status(200).json({ menuItem, pagesPageMeta, title, pagesIds, pagesPath })
+  res.status(200).json({ menu, meta, title, pagesIds, pagesPath })
 }
 
 export default handler

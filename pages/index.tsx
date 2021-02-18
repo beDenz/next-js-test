@@ -1,14 +1,23 @@
 import { Layout } from 'components/layout/Layout'
+import { MenuItem, Meta } from 'types/types'
+
+type PageProps = {
+  menu: MenuItem[]
+  meta: Meta
+  title: string
+  ver: string
+  text: string
+}
 
 export const Home = ({
-  menuItem,
-  mainPageMeta,
+  menu,
+  meta,
   title,
   text,
   ver,
-}): React.ReactNode => {
+}: PageProps): React.ReactNode => {
   return (
-    <Layout menuItem={menuItem} meta={mainPageMeta}>
+    <Layout menuItem={menu} meta={meta}>
       <h1>{title}</h1>
       <p>{text}</p>
       <p>ver {ver}</p>
@@ -21,12 +30,12 @@ export async function getStaticProps() {
 
   const result = await res.json()
 
-  const { menuItem, mainPageMeta, title, text, ver } = result
+  const { menu, meta, title, text, ver } = result
 
   return {
     props: {
-      menuItem,
-      mainPageMeta,
+      menu,
+      meta,
       title,
       text,
       ver,

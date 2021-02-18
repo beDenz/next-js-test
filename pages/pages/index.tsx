@@ -9,20 +9,20 @@ type PagesIdItem = {
 }
 
 type PagesProps = {
-  menuItem: MenuItem[]
-  pagesPageMeta: Meta
+  menu: MenuItem[]
+  meta: Meta
   title: string
   pagesIds: PagesIdItem[]
 }
 
 const Pages = ({
-  menuItem,
-  pagesPageMeta,
+  menu,
+  meta,
   title,
   pagesIds,
 }: PagesProps): React.ReactNode => {
   return (
-    <Layout menuItem={menuItem} meta={pagesPageMeta}>
+    <Layout menuItem={menu} meta={meta}>
       <h1>{title}</h1>
       <ul>
         {pagesIds.map((item) => (
@@ -40,10 +40,10 @@ export async function getStaticProps() {
 
   const result = await res.json()
 
-  const { menuItem, pagesPageMeta, title, pagesIds } = result
+  const { menu, meta, title, pagesIds } = result
 
   return {
-    props: { menuItem, pagesPageMeta, title, pagesIds },
+    props: { menu, meta, title, pagesIds },
   }
 }
 
