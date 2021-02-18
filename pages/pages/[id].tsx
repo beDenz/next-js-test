@@ -29,7 +29,7 @@ export async function getStaticPaths() {
   const { pagesPath } = result
 
   return {
-    paths: pagesPath,
+    paths: pagesPath.map((item) => item),
     fallback: true,
   }
 }
