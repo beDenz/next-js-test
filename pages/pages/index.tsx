@@ -15,7 +15,12 @@ type PagesProps = {
   pagesIds: PagesIdItem[]
 }
 
-const Pages = ({ menuItem, pagesPageMeta, title, pagesIds }: PagesProps) => {
+const Pages = ({
+  menuItem,
+  pagesPageMeta,
+  title,
+  pagesIds,
+}: PagesProps): React.ReactNode => {
   return (
     <Layout menuItem={menuItem} meta={pagesPageMeta}>
       <h1>{title}</h1>
@@ -31,8 +36,6 @@ const Pages = ({ menuItem, pagesPageMeta, title, pagesIds }: PagesProps) => {
 }
 
 export async function getStaticProps() {
-  console.log('!!!Pages getStaticProps!!!')
-
   const res = await fetch(process.env.PAGES_PAGE)
 
   const result = await res.json()

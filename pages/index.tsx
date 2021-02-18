@@ -6,7 +6,7 @@ export const Home = ({
   title,
   text,
   ver,
-}): JSX.Element => {
+}): React.ReactNode => {
   return (
     <Layout menuItem={menuItem} meta={mainPageMeta}>
       <h1>{title}</h1>

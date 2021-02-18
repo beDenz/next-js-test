@@ -1,6 +1,6 @@
 import { Layout } from 'components/layout/Layout'
 
-function About({ menuItem, aboutPageMeta, title, text, ver }): JSX.Element {
+function About({ menuItem, aboutPageMeta, title, text, ver }): React.ReactNode {
   return (
     <Layout menuItem={menuItem} meta={aboutPageMeta}>
       <h1>{title}</h1>

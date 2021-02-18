@@ -6,7 +6,7 @@ export const Ssr = ({
   title,
   text,
   ver,
-}): JSX.Element => {
+}): React.ReactNode => {
   return (
     <Layout menuItem={menuItem} meta={ssrPageMeta}>
       <h1>{title}</h1>
