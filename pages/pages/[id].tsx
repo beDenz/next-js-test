@@ -47,7 +47,7 @@ export async function getStaticProps({ params }) {
   //  const { menu, meta, title, ver } = result
 
   return {
-    props: { ...result, url },
+    props: { ...result, url, params },
   }
 }
 
