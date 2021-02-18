@@ -22,7 +22,7 @@ const Page = (props: PageProps) => {
 }
 
 export async function getStaticPaths() {
-  console.log('!!!getStaticPaths!!')
+  console.log('!!!Page getStaticPaths!!')
 
   const res = await fetch(process.env.PAGES_PAGE)
 
@@ -36,6 +36,8 @@ export async function getStaticPaths() {
   }
 }
 export async function getStaticProps({ params }) {
+  console.log('!!!Page getStaticProps!!!')
+
   const url =
     process.env.NODE_ENV === 'production'
       ? `${process.env.PAGE_ID}${params.id}.json`

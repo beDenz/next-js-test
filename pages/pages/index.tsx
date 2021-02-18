@@ -31,6 +31,8 @@ const Pages = ({ menuItem, pagesPageMeta, title, pagesIds }: PagesProps) => {
 }
 
 export async function getStaticProps() {
+  console.log('!!!Pages getStaticProps!!!')
+
   const res = await fetch(process.env.PAGES_PAGE)
 
   const result = await res.json()
