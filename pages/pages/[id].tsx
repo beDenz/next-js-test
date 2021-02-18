@@ -10,11 +10,7 @@ type PageProps = {
 }
 
 const Page = (props: PageProps) => {
-  console.log('Page props', props)
-
   const { menu, meta, title, ver } = props
-
-  // if (!menu) return null
 
   return (
     <Layout menuItem={menu} meta={meta}>
@@ -25,8 +21,6 @@ const Page = (props: PageProps) => {
 }
 
 export async function getStaticPaths() {
-  console.log('!!!Page getStaticPaths!!')
-
   const res = await fetch(process.env.PAGES_PAGE)
 
   const result = await res.json()
@@ -39,22 +33,16 @@ export async function getStaticPaths() {
   }
 }
 export async function getStaticProps({ params }) {
-  console.log('!!!Page getStaticProps!!!')
-
   const url =
     process.env.NODE_ENV === 'production'
       ? `${process.env.PAGE_ID}${params.id}.json`
       : `${process.env.PAGE_ID_GIT}${params.id}.json`
 
-  console.log('!!!url', url)
-
   const res = await fetch(url)
   const result = await res.json()
 
-  //  const { menu, meta, title, ver } = result
-
   return {
-    props: { ...result, url, params },
+    props: result,
   }
 }
 
