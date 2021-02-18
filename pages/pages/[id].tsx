@@ -12,13 +12,15 @@ type PageProps = {
 const Page = (props: PageProps) => {
   console.log('Page props', props)
 
-  return <div>!!</div>
-  // return (
-  //   <Layout menuItem={menu} meta={meta}>
-  //     <h1>{title}</h1>
-  //     <p>ver {ver}</p>
-  //   </Layout>
-  // )
+  const { menu, meta, title, ver } = props
+
+  // return <div>!!</div>
+  return (
+    <Layout menuItem={menu} meta={meta}>
+      <h1>{title}</h1>
+      <p>ver {ver}</p>
+    </Layout>
+  )
 }
 
 export async function getStaticPaths() {
@@ -41,7 +43,7 @@ export async function getStaticProps({ params }) {
   const url =
     process.env.NODE_ENV === 'production'
       ? `${process.env.PAGE_ID}${params.id}.json`
-      : `${process.env.PAGE_ID}${params.id}`
+      : `${process.env.PAGE_ID_GIT}${params.id}.json`
 
   console.log('!!!url', url)
 
