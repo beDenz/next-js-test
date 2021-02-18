@@ -10,7 +10,7 @@ type PageProps = {
 }
 
 const Page = (props: PageProps) => {
-  console.log('!!!', props)
+  console.log('Page props', props)
 
   return <div>!!</div>
   // return (
@@ -22,6 +22,8 @@ const Page = (props: PageProps) => {
 }
 
 export async function getStaticPaths() {
+  console.log('!!!getStaticPaths!!')
+
   const res = await fetch(process.env.PAGES_PAGE)
 
   const result = await res.json()
