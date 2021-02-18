@@ -14,6 +14,8 @@ const Page = (props: PageProps) => {
 
   const { menu, meta, title, ver } = props
 
+  if (!menu) return null
+
   // return <div>!!</div>
   return (
     <Layout menuItem={menu} meta={meta}>
