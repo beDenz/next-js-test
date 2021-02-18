@@ -9,7 +9,7 @@ interface MenuItem {
 
 const NavMenuItem: React.FC<MenuItem> = ({ id, link, title }) => {
   return (
-    <li className={styles['nav-menu-item']}>
+    <li className={styles['nav-menu-item']} key={id}>
       <Link href={link}>{title}</Link>
     </li>
   )

@@ -1,5 +1,6 @@
 import { Layout } from 'components/layout/Layout'
 import { MenuItem, Meta } from 'types/types'
+import { GetStaticProps } from 'next'
 
 type PageProps = {
   menu: MenuItem[]
@@ -25,7 +26,7 @@ export const Home = ({
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch(process.env.MAIN_PAGE)
 
   const result = await res.json()

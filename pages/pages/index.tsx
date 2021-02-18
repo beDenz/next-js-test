@@ -1,6 +1,7 @@
 import { Layout } from 'components/layout/Layout'
 import { MenuItem, Meta } from 'types/types'
 import Link from 'next/link'
+import { GetStaticProps } from 'next'
 
 type PagesIdItem = {
   id: string
@@ -35,7 +36,7 @@ const Pages = ({
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch(process.env.PAGES_PAGE)
 
   const result = await res.json()
