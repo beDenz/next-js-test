@@ -45,6 +45,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { menu, meta, title, pagesIds },
+    revalidate: +process.env.REVALIDATE_HIGH,
   }
 }
 

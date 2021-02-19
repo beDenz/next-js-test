@@ -35,7 +35,7 @@ export const getStaticProps: GetStaticProps = async () => {
       text,
       ver,
     },
-    revalidate: 60,
+    revalidate: +process.env.REVALIDATE_HIGH,
   }
 }
 
