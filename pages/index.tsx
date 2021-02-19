@@ -16,7 +16,7 @@ export const Home = ({
   title,
   text,
   ver,
-}: PageProps): React.ReactNode => {
+}: PageProps): JSX.Element => {
   return (
     <Layout menuItem={menu} meta={meta}>
       <h1>{title}</h1>
