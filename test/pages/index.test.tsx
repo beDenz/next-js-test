@@ -1,5 +1,6 @@
 import React from 'react'
-import { render, fireEvent } from '../testUtils'
+import { render } from '../testUtils'
+// import { render, fireEvent } from '../testUtils'
 import { Home } from 'pages/index'
 
 const menu = [
