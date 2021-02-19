@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Menu naavigation menu matches snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="navMenu"
+  >
+    <li
+      class="nav-menu-item"
+    >
+      <a
+        href="/"
+      >
+        home
+      </a>
+    </li>
+    <li
+      class="nav-menu-item"
+    >
+      <a
+        href="/pages"
+      >
+        pages
+      </a>
+    </li>
+    <li
+      class="nav-menu-item"
+    >
+      <a
+        href="/about"
+      >
+        about
+      </a>
+    </li>
+    <li
+      class="nav-menu-item"
+    >
+      <a
+        href="/ssr"
+      >
+        ssr
+      </a>
+    </li>
+    <li
+      class="nav-menu-item"
+    >
+      <a
+        href="/"
+      >
+        login
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

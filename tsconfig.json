@@ -17,7 +17,8 @@
     "paths": {
       "components": ["components/*"],
       "pages": ["pages/*"],
-      "types": ["types/*"]
+      "types": ["types/*"],
+      "test": ["test/*"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],

@@ -16,5 +16,6 @@ module.exports = {
     '^components/(.*)': '<rootDir>/components/$1',
     '^pages/(.*)': '<rootDir>/pages/$1',
     '^types/(.*)': '<rootDir>/types/$1',
+    '^test/(.*)': '<rootDir>/test/$1',
   },
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from '../testUtils'
+import { create } from 'react-test-renderer'
 // import { render, fireEvent } from '../testUtils'
 import { Home } from 'pages/index'
 
@@ -52,6 +53,14 @@ describe('Home page', () => {
       {}
     )
     expect(asFragment()).toMatchSnapshot()
+  })
+
+  it('render main page title', () => {
+    const rerender = create(
+      <Home menu={menu} meta={meta} title={title} text={text} ver={ver} />
+    )
+
+    expect(() => rerender.root.findByType('h1')).not.toThrow()
   })
 
   // it('clicking button triggers alert', () => {
