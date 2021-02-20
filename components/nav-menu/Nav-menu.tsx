@@ -7,7 +7,7 @@ interface MenuItem {
   title: string
 }
 
-const NavMenuItem: React.FC<MenuItem> = ({ id, link, title }) => {
+const NavMenuItem: React.FC<MenuItem> = ({ id, link, title }): JSX.Element => {
   return (
     <li className={styles['nav-menu-item']} key={id}>
       <Link href={link}>{title}</Link>
