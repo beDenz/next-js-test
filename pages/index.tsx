@@ -1,6 +1,7 @@
 import { Layout } from 'components/layout/Layout'
 import { MenuItem, Meta } from 'types/types'
 import { GetStaticProps } from 'next'
+import { Button } from 'components/button/button'
 
 type PageProps = {
   menu: MenuItem[]
@@ -22,6 +23,7 @@ export const Home = ({
       <h1>{title}</h1>
       <p>{text}</p>
       <p>ver {ver}</p>
+      <Button primary title="button" color="green" linkIcon />
     </Layout>
   )
 }
