@@ -1,0 +1,34 @@
+@use '/styles/helpers' as *;
+
+.radiobutton {
+  position: relative;
+  width: rem(16);
+  height: rem(16);
+  border-radius: 50%;
+  border: 1px solid #dde5f0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(8);
+    height: rem(8);
+    border-radius: 50%;
+    background-color: #699be4;
+    transition: opacity 0.3s;
+  }
+}
+
+.radiobuttonOn {
+  &::before {
+    opacity: 1;
+  }
+}
+
+.radiobuttonOff {
+  &::before {
+    opacity: 0;
+  }
+}
