@@ -1,0 +1,33 @@
+.switcher {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border-radius: 32px;
+  transition: background-color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: right 0.3s;
+  }
+}
+
+.switcherOff {
+  background-color: #dde5f0;
+  &::before {
+    right: 2px;
+  }
+}
+
+.switcherOn {
+  background-color: #66ab8e;
+  &::before {
+    right: 18px;
+  }
+}
