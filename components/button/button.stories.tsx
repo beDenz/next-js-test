@@ -45,6 +45,14 @@ PrimaryWitoutTitle.args = {
   linkIcon: true,
 }
 
+export const PrimaryDisabledWitoutTitle = Template.bind({})
+PrimaryDisabledWitoutTitle.args = {
+  primary: true,
+  color: 'green',
+  linkIcon: true,
+  disable: true,
+}
+
 export const SecondaryGrey = Template.bind({})
 SecondaryGrey.args = {
   title: 'button',
