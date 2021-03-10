@@ -1,9 +1,12 @@
+@use './helpers' as *;
+@use './params' as *;
+
 body,
 html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-size: 16px;
+  font-size: $global-font-size;
   font-size: Roboto, sans-serif;
 }
 

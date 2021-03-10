@@ -1,0 +1,17 @@
+$window-width: 320;
+
+@function vw($pixels, $window-width: $window-width) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($window-width)) {
+    $window-width: $window-width * 1px;
+  }
+  @return ($pixels * 100) / $window-width * 1vw;
+}
+
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}

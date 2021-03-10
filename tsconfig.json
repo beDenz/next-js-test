@@ -18,7 +18,8 @@
       "components": ["components/*"],
       "pages": ["pages/*"],
       "types": ["types/*"],
-      "test": ["test/*"]
+      "test": ["test/*"],
+      "styles": ["styles/*"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],
