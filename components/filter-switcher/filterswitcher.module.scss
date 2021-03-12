@@ -1,0 +1,31 @@
+@use '/styles/helpers' as *;
+
+.filterSwitcher {
+  padding: 3px;
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #dde5f0;
+  border-radius: 4px;
+}
+
+.filterSwitcherItem {
+  font-size: rem(13);
+  line-height: rem(30);
+  font-weight: 500;
+  text-align: center;
+  flex-grow: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.on {
+  background-color: #ecf7f2;
+  border: 1px solid rgba(102, 171, 142, 0.15);
+  border-radius: 3px;
+  font-weight: bold;
+  color: #5d8574;
+}
+.off {
+  color: #909fb6;
+  border: 1px solid rgba(102, 171, 142, 0);
+}
