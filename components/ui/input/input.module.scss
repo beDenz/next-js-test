@@ -1,0 +1,26 @@
+@use '/styles/helpers' as *;
+
+.input {
+  background-color: #ffffff;
+  border: 1px solid #dde5f0;
+  border-radius: 4px;
+
+  input {
+    display: block;
+    padding: rem(9) rem(12);
+    width: 100%;
+    font-size: rem(13);
+    line-height: rem(22);
+    font-weight: 500;
+    color: #425976;
+    border: none;
+    overflow: hidden;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      color: #909fb6;
+    }
+  }
+}
