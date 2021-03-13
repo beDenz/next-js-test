@@ -14,6 +14,7 @@ module.exports = {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
     '^components/(.*)': '<rootDir>/components/$1',
+    '^ui/(.*)': '<rootDir>/components/ui/$1',
     '^pages/(.*)': '<rootDir>/pages/$1',
     '^types/(.*)': '<rootDir>/types/$1',
     '^test/(.*)': '<rootDir>/test/$1',

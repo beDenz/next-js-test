@@ -1,0 +1,32 @@
+@use '/styles/helpers' as *;
+
+.nav {
+  margin: 0 auto 0 rem(60);
+  display: flex;
+}
+
+.navItem {
+  font-size: rem(16);
+  line-height: rem(26);
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: rem(40);
+  }
+}
+
+.active {
+  font-weight: 600;
+  color: #425976;
+}
+
+.unactive {
+  font-weight: normal;
+  color: #909fb6;
+}
+
+.header {
+  padding: rem(24) rem(32);
+  display: flex;
+  align-items: center;
+}

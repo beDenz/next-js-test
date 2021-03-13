@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "components": ["components/*"],
+      "ui": ["components/ui/*"],
       "pages": ["pages/*"],
       "types": ["types/*"],
       "test": ["test/*"],
