@@ -2,7 +2,7 @@ import { Radiobutton, RadiobuttonProps } from './radiobutton'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
 export default {
-  title: 'SimpleValue/Radiobutton',
+  title: 'SimpleValue/UI/Radiobutton',
   component: Radiobutton,
   args: {
     onChange: Function,

@@ -2,7 +2,7 @@ import { Search, SearchProps } from './search'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
 export default {
-  title: 'SimpleValue/Search',
+  title: 'SimpleValue/UI/Search',
   component: Search,
   decorators: [
     (Story) => (

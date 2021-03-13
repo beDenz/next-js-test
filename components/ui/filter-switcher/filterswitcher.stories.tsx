@@ -13,7 +13,7 @@ const filterSwitcherItemTemp = [
 ]
 
 export default {
-  title: 'SimpleValue/FilterSwitcher',
+  title: 'SimpleValue/UI/FilterSwitcher',
   component: FilterSwitcher,
   args: {
     data: filterSwitcherItemTemp,

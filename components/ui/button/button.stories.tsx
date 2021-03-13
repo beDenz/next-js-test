@@ -2,7 +2,7 @@ import { Button, ButtonProps } from './button'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
 export default {
-  title: 'SimpleValue/Button',
+  title: 'SimpleValue/UI/Button',
   component: Button,
 } as Meta
 

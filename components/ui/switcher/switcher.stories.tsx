@@ -2,7 +2,7 @@ import { Switcher, SwitcherProps } from './switcher'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
 export default {
-  title: 'SimpleValue/Switcher',
+  title: 'SimpleValue/UI/Switcher',
   component: Switcher,
   args: {
     onChange: Function,

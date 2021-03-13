@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import { AddNewCard, AddNewCardProps } from './addNew'
 
 export default {
-  title: 'SimpleValue/AddNew',
+  title: 'SimpleValue/UI/AddNew',
   component: AddNewCard,
   args: {
     onClick: Function,
