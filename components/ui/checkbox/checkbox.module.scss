@@ -1,0 +1,32 @@
+.checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #dde5f0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border 0.3s;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 0C0.895431 0 0 0.895431 0 2V14C0 15.1046 0.895431 16 2 16H14C15.1046 16 16 15.1046 16 14V2C16 0.895431 15.1046 0 14 0H2ZM7.11468 11.9983C7.55678 11.978 7.96568 11.7739 8.22825 11.4419L12.7772 5.69354C13.1511 5.22118 13.0434 4.55583 12.5364 4.20747C12.029 3.85911 11.3149 3.95969 10.9413 4.43225L7.08079 9.31075C7.05588 9.3417 7.01773 9.36114 6.97598 9.36302C6.93447 9.36491 6.89407 9.34943 6.86624 9.32058L4.98808 7.37846C4.56617 6.94228 3.84533 6.90715 3.37697 7.30026C2.90905 7.69337 2.87157 8.36541 3.29348 8.80138L5.94814 11.5462C6.24438 11.8528 6.67257 12.0188 7.11468 11.9983Z' fill='%23699BE4'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+}
+
+.on {
+  border: 1px solid #699be4;
+  &::after {
+    opacity: 1;
+  }
+}

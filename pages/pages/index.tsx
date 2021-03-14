@@ -1,7 +1,7 @@
-import { Layout } from 'components/layout'
 import { MenuItem, Meta } from 'types/types'
-import Link from 'next/link'
 import { GetStaticProps } from 'next'
+import Link from 'next/link'
+import { Layout } from 'components/layout'
 
 type PagesIdItem = {
   id: string

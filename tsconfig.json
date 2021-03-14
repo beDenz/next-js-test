@@ -16,11 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "components": ["components/*"],
-      "ui": ["components/ui/*"],
+      "ui": ["components/ui/index.tsx"],
       "pages": ["pages/*"],
       "types": ["types/*"],
       "test": ["test/*"],
-      "styles": ["styles/*"]
+      "styles": ["styles/*"],
+      "customhooks": ["hooks/index.tsx"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],

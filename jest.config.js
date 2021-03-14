@@ -18,5 +18,6 @@ module.exports = {
     '^pages/(.*)': '<rootDir>/pages/$1',
     '^types/(.*)': '<rootDir>/types/$1',
     '^test/(.*)': '<rootDir>/test/$1',
+    '^hooks/(.*)': '<rootDir>/hooks/$1',
   },
 }

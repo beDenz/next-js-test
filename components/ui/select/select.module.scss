@@ -1,0 +1,95 @@
+.select {
+  position: relative;
+}
+.selectInner {
+  position: relative;
+  padding: 0 12px;
+  background-color: #ffffff;
+  border: 1px solid #dde5f0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  span {
+    font-size: 13px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.8225 6.22573C13.0803 6.50334 13.0542 6.92842 12.7641 7.17518L8.46694 10.8301C8.20064 11.0566 7.79936 11.0566 7.53306 10.8301L3.23591 7.17518C2.94579 6.92842 2.91965 6.50334 3.17754 6.22573C3.43542 5.94812 3.87967 5.92312 4.16978 6.16988L8 9.42767L11.8302 6.16988C12.1203 5.92312 12.5646 5.94812 12.8225 6.22573Z' fill='%23909FB6'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.placeholder {
+  color: #909fb6;
+}
+
+.value {
+  color: #425976;
+}
+
+.dropdownList {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  white-space: nowrap;
+  filter: drop-shadow(0px 4px 24px rgba(224, 224, 238, 0.6));
+}
+.dropdownListItem {
+  padding: 6px 20px 3px;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #909fb6;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #f7f9fc;
+    color: #425976;
+  }
+}
+.dropdownListSubtract {
+  &::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #ffffff;
+  }
+}
+
+.dropdownListEnter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.dropdownListEnterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dropdownListExit {
+  opacity: 1;
+}
+.dropdownListExitActive {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

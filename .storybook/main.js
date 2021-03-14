@@ -15,6 +15,7 @@ module.exports = {
     config.resolve.alias = {
       ...config.resolve.alias,
       components: path.resolve(__dirname, '../components'),
+      customhooks: path.resolve(__dirname, '../hooks'),
     }
 
     return config
