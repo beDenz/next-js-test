@@ -1,5 +1,5 @@
 import styles from './header.module.scss'
-import { Logo } from '../ui/logo/logo'
+import { Logo } from 'components/ui'
 import Link from 'next/link'
 import classNames from 'classnames'
 

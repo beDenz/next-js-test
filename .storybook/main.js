@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   stories: [
     '../components/**/*.stories.@(ts|tsx)',
@@ -9,4 +11,12 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/preset-scss',
   ],
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      components: path.resolve(__dirname, '../components'),
+    }
+
+    return config
+  },
 }

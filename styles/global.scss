@@ -20,6 +20,12 @@ ol {
   box-sizing: border-box;
 }
 
-.header {
-  display: flex;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
 }

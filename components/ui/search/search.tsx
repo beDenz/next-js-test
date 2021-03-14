@@ -1,5 +1,5 @@
 import styles from './search.module.scss'
-import { Input } from '../input/input'
+import { Input } from 'components/ui'
 
 export type SearchProps = {
   value: string
