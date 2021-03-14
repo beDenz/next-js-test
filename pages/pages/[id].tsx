@@ -1,4 +1,4 @@
-import { Layout } from 'components/layout/Layout'
+import { Layout } from 'components/layout'
 import { MenuItem, Meta } from 'types/types'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
