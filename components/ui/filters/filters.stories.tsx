@@ -49,9 +49,3 @@ Primary.args = {
   data: tempSelector,
   value: '',
 }
-
-export const Secondary = Template.bind({})
-Secondary.args = {
-  data: tempSelector,
-  value: 'Value',
-}

@@ -1,13 +1,15 @@
+@use '/styles/helpers' as *;
+
 .search {
   position: relative;
   &::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 12px;
+    left: rem(12);
     transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
+    width: rem(16);
+    height: rem(16);
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.99998 1.65001C4.04525 1.65001 1.64998 4.04528 1.64998 7.00001C1.64998 9.95473 4.04525 12.35 6.99998 12.35C9.9547 12.35 12.35 9.95473 12.35 7.00001C12.35 4.04528 9.9547 1.65001 6.99998 1.65001ZM0.349976 7.00001C0.349976 3.32731 3.32728 0.350006 6.99998 0.350006C10.6727 0.350006 13.65 3.32731 13.65 7.00001C13.65 10.6727 10.6727 13.65 6.99998 13.65C3.32728 13.65 0.349976 10.6727 0.349976 7.00001Z' fill='%23909FB6'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 16L11 12L11.9192 11.0808L15.9192 15.0808L15 16Z' fill='%23909FB6'/%3E%3C/svg%3E%0A");
     background-position: center;
     background-repeat: no-repeat;

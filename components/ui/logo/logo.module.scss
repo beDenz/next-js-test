@@ -1,6 +1,8 @@
+@use '/styles/helpers' as *;
+
 .logo {
   svg {
-    width: 115px;
-    height: 19px;
+    width: rem(115);
+    height: rem(19);
   }
 }
